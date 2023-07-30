@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body> 
+    <style> 
+    *{ 
+        margin: 0; 
+        padding: 0;
+    } 
+    body{ 
+        background: linear-gradient(#3c2c2c,rgb(37, 37, 52)); 
+        height: 100vh;
+    } 
+    section{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    } 
+    ul{ 
+        text-align: center;
+    } 
+    ul li{ 
+        list-style: none; 
+        margin: 15px;
+    } 
+    ul li a{ 
+        color: aliceblue; 
+        text-decoration: none; 
+        font-size: 20px; 
+        font-weight: 500; 
+        letter-spacing: 5px; 
+        background-color:azure; 
+        padding: 5px 15px; 
+        border-radius: 20px; 
+        display: inline-block;
+    }
+    a:hover{ 
+        transform: scale(1.5); 
+        background-color: aquamarine; 
+        opacity: 1; 
+        transition: 1.5s
+    } 
+    ul li a::after{ 
+        content:attr(data-text) ; 
+        color: aliceblue; 
+        left: 50%; 
+        top: 50%; 
+        transform: translate(-50%,-50%); 
+        font-size: 50px; 
+        font-weight: 200; 
+        text-transform:uppercase ; 
+        opacity: 0;
+    } 
+    ul li:hover:after{ 
+        opacity: 0.5;
+    }
+    </style>
+    <section> 
+        <ul> 
+            <li data-text="sun"><a href="#">game</a></li> 
+            <li data-text="sun"><a href="#">game</a></li> 
+            <li data-text="sun"><a href="#">game</a></li> 
+            <li data-text="sun"><a href="#">game</a></li> 
+            <li data-text="sun"><a href="#">game</a></li>
+        </ul>
+    </section>
+</body>
+</body>
